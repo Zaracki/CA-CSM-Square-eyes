@@ -10,20 +10,18 @@ const container = document.querySelector(".container");
 const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/" + id;
 
 try {
-  container.innerHTML = "Loading...";
+  container.innerHTML = `<div class="lds-dual-ring"></div>`;
+
   async function fetchMovie() {
   const response = await fetch(apiUrl);
   const json = await response.json();
 
   console.log(json);
-
-  
-
   setTimeout(function(){
     
         container.innerHTML = `<section class="product-area">
   <div class="product-img">
-    <img src="${json.image}" alt="Product picture of Doctor Strange in the Multiverse of Madness">
+    <img src="${json.image}" alt="Image of ${json.title}">
   </div>
   <div class="product-info">
     <h1>${json.title}</h1>
