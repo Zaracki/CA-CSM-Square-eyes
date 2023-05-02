@@ -12,7 +12,7 @@ const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/" + id;
 try {
   container.innerHTML = `<div class="lds-dual-ring"></div>`;
 
-  async function fetchMovie() {
+  async function renderHTML() {
   const response = await fetch(apiUrl);
   const json = await response.json();
 
@@ -34,7 +34,7 @@ try {
 
   }
 
-   fetchMovie()
+   renderHTML()
 }
 
 catch(error) {
