@@ -3,6 +3,7 @@ const topPicksContainer = document.querySelector(".top-picks");
 const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/";
 
 try {
+  
   async function renderHTML() {
   const response = await fetch(apiUrl);
   const json = await response.json();
