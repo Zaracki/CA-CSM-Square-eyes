@@ -10,8 +10,6 @@ const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/";
     const response = await fetch(apiUrl);
     const json = await response.json();
 
-    console.log(json);
-
     loadSpinner.innerHTML = "";
     
     json.forEach(function(json) {

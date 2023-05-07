@@ -10,7 +10,6 @@ const loadSpinner = document.querySelector(".container");
       const response = await fetch(apiUrl);
       const json = await response.json();
 
-      console.log(json);
 
       loadSpinner.innerHTML = "";
       

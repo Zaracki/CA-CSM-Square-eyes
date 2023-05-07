@@ -18,7 +18,6 @@ const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/" + id;
       const response = await fetch(apiUrl);
       const json = await response.json();
 
-      console.log(json);
       setTimeout(function(){
       
       container.innerHTML = `<section class="product-area">
@@ -37,7 +36,6 @@ const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/" + id;
 
     catch(error) {
       console.log(error);
-      // TODO - Expand error handling
     }
 
   }
