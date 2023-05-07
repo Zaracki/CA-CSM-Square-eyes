@@ -1,16 +1,17 @@
+import {apiUrl, spinnerDiv} from "./components/constants.js";
+
 const container = document.querySelector(".product_sorted");
-const loadSpinner = document.querySelector(".container");
-const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/";
+const loadingDiv = document.querySelector(".loadingContainer");
 
 
 
   async function renderHTML() {
    try {
-    loadSpinner.innerHTML = `<div class="lds-dual-ring"></div>`;
+    loadingDiv.innerHTML = spinnerDiv;
     const response = await fetch(apiUrl);
     const json = await response.json();
 
-    loadSpinner.innerHTML = "";
+    loadingDiv.innerHTML = "";
     
     json.forEach(function(json) {
       container.innerHTML += `<div>
@@ -20,8 +21,8 @@ const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/";
    }
 
    catch(error) {
-    console.log(error);
-   }
+    loadingDiv.innerHTML = displayError("Error has happende!");
+  }
  
 
 }

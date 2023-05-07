@@ -1,3 +1,5 @@
+import {apiUrl, spinnerDiv} from "./components/constants.js";
+
 const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
@@ -5,21 +7,21 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 
-const container = document.querySelector(".container");
-const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/" + id;
+const resultsContainer = document.querySelector(".container");
+const apiUrlId = apiUrl + id;
 
 
-  container.innerHTML = `<div class="lds-dual-ring"></div>`;
+  resultsContainer.innerHTML = spinnerDiv;
 
   async function renderHTML() {
 
     try {
-      const response = await fetch(apiUrl);
+      const response = await fetch(apiUrlId);
       const json = await response.json();
 
       setTimeout(function(){
       
-      container.innerHTML = `<section class="product-area">
+      resultsContainer.innerHTML = `<section class="product-area">
       <div class="product-img">
       <img src="${json.image}" alt="Image of ${json.title}">
       </div>
@@ -34,7 +36,7 @@ const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/" + id;
     }
 
     catch(error) {
-      console.log(error);
+      resultsContainer.innerHTML = displayError("Error has happende!");
     }
 
   }

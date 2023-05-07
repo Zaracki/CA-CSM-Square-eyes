@@ -1,17 +1,18 @@
+import {apiUrl, spinnerDiv} from "./components/constants.js";
+
 const newArrivalsContainer = document.querySelector(".new-arrivals");
 const topPicksContainer = document.querySelector(".top-picks");
-const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/";
-const loadSpinner = document.querySelector(".container");
+const loadingDiv = document.querySelector(".loadingContainer");
 
   
   async function renderHTML() {
     try {
-      loadSpinner.innerHTML = `<div class="lds-dual-ring"></div>`;
+      loadingDiv.innerHTML = spinnerDiv;
       const response = await fetch(apiUrl);
       const json = await response.json();
 
 
-      loadSpinner.innerHTML = "";
+      loadingDiv.innerHTML = "";
       
       for (let i = 0; i <= 3; i++) {
         let currentJson = json[i];
@@ -33,7 +34,7 @@ const loadSpinner = document.querySelector(".container");
     }
 
     catch(error) {
-      console.log(error);
+      loadingDiv.innerHTML = displayError("Error has happende!");
     }
 
   
