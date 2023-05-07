@@ -21,7 +21,7 @@ const loadingDiv = document.querySelector(".loadingContainer");
    }
 
    catch(error) {
-    loadingDiv.innerHTML = displayError("Error has happende!");
+    loadingDiv.innerHTML = displayError();
   }
  
 

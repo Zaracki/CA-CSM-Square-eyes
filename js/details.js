@@ -6,10 +6,8 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-
 const resultsContainer = document.querySelector(".container");
 const apiUrlId = apiUrl + id;
-
 
   resultsContainer.innerHTML = spinnerDiv;
 
@@ -36,7 +34,7 @@ const apiUrlId = apiUrl + id;
     }
 
     catch(error) {
-      resultsContainer.innerHTML = displayError("Error has happende!");
+      resultsContainer.innerHTML = displayError();
     }
 
   }
