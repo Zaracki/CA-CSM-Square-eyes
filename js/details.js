@@ -4,7 +4,7 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-console.log(id);
+
 
 const container = document.querySelector(".container");
 const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/" + id;
