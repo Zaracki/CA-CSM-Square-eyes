@@ -16,8 +16,6 @@ const apiUrlId = apiUrl + id;
     try {
       const response = await fetch(apiUrlId);
       const json = await response.json();
-
-      setTimeout(function(){
       
       resultsContainer.innerHTML = `<section class="product-area">
       <div class="product-img">
@@ -30,7 +28,6 @@ const apiUrlId = apiUrl + id;
       </div>`;
 
       document.title = `${json.title}`; 
-      });
     }
 
     catch(error) {
