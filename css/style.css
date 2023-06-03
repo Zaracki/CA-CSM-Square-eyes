@@ -714,14 +714,16 @@ p {
   max-width: 1160px;
   }
 
-  .product_thor-banner,
-  .about-banner,
-  .street-map {
+  .product_thor-banner {
     min-height: 450px;
     max-width: 1160px;
   }
 
-
+  .about-banner,
+  .street-map {
+    min-height: 322px;
+    max-width: 1160px;
+  }
 
   .product_drstrange-banner {
     max-height: 400px;
