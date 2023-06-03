@@ -90,7 +90,8 @@ header a {
   font-weight: 600;
 }
 
-header a:hover {
+header a:hover,
+.fa-arrow-left:hover {
   opacity: 50%;
 }
 
@@ -269,7 +270,7 @@ footer a {
   display: flex;
 }
 
-.product-area {
+.product-area  {
   position: relative;
   max-width: 1160px;
   margin: auto;
@@ -353,6 +354,14 @@ footer a {
 
 .might-like {
   padding: 0 0 40px 0;
+}
+
+.fa-arrow-left {
+  text-decoration: none;
+  color: var(--main-white);
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 /** Checkout **/
