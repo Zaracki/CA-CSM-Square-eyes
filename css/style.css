@@ -138,7 +138,8 @@ footer a {
   padding: 0px 5px;
 }
 
-.nav-list span {
+.nav-list span,
+.fa-cart-shopping span {
   display: none;
 }
 
