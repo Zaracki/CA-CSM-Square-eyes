@@ -19,12 +19,12 @@ const apiUrlId = apiUrl + "/" + id;
       
       resultsContainer.innerHTML = `<section class="product-area">
       <div class="product-img">
-      <img src="${json.image}" alt="Image of ${json.title}">
+      <img src="${json.images[0].src}" alt="Image of ${json.title}">
       </div>
       <div class="product-info">
-      <h1>${json.title}</h1>
+      <h1>${json.name}</h1>
       <p>${json.description}</p>
-      <a href="cart.html" class="cta cta-buy">Buy ${json.price}$</a>
+      <a href="cart.html" class="cta cta-buy">Buy ${json.price_html}</a>
       </div>`;
 
       document.title = `${json.title}`; 
