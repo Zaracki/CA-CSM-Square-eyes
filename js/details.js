@@ -7,7 +7,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 const resultsContainer = document.querySelector(".container");
-const apiUrlId = apiUrl + id;
+const apiUrlId = apiUrl + "/" + id;
 
   resultsContainer.innerHTML = spinnerDiv;
 
