@@ -1,2 +1,2 @@
-export const apiUrl = "https://api.noroff.dev/api/v1/square-eyes/";
+export const apiUrl = "http://www.a33.no/wp-json/wc/store/products";
 export const spinnerDiv = `<div class="lds-dual-ring"></div>`;
