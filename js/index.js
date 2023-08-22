@@ -1,6 +1,6 @@
 import {apiUrl, spinnerDiv} from "./components/constants.js";
 
-const newArrivalsContainer = document.querySelector(".new-arrivals");
+const newArrivalsContainer = document.querySelector(".featured");
 const topPicksContainer = document.querySelector(".top-picks");
 const loadingDiv = document.querySelector(".loadingContainer");
 

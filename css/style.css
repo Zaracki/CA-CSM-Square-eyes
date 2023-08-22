@@ -175,7 +175,7 @@ footer a {
   border-color: var(--main-white);
 }
 
-.new-arrivals,
+.featured,
 .top-picks,
 .coming-soon {
   display: grid;
@@ -185,14 +185,14 @@ footer a {
   grid-gap: 20px;
 }
 
-.new-arrivals h2,
+.featured h2,
 .top-picks h2,
 .coming-soon h2 {
   grid-column: -1/1;
   padding: 40px 0px 0px 0px;
 }
 
-.new-arrivals img,
+.featured img,
 .top-picks img,
 .coming-soon img,
 .cast img,
@@ -614,7 +614,7 @@ footer a {
     min-height: 550px;
   }
   
-  .new-arrivals,
+  .featured,
   .top-picks,
   .coming-soon {
     max-width: 575px;
@@ -643,7 +643,7 @@ p {
   font-size: 20px;
 }
 
-  .new-arrivals,
+  .featured,
   .top-picks,
   .coming-soon {
     max-width: 805px;
@@ -708,7 +708,7 @@ p {
     display: none;
   }
 
-  .new-arrivals,
+  .featured,
   .top-picks,
   .coming-soon {
   grid-template-columns: repeat(4, 1fr);
