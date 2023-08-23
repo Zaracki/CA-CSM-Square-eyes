@@ -1,8 +1,8 @@
-# JS1-API-CA-Zaracki
+# CSM-CA-Square-Eyes-Delivery
 
-<h1>Javascript 1 CA</h1>
+<h1>Content Managment Systems CA</h1>
 
-This is my finished project of Javascript 1
+This is my finished project of CSM
 
 Source/Reference:
 
