@@ -49,4 +49,4 @@ Here you can detail any information you want to provide regarding contributing t
 
 ## Acknowledgments
 
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+Used a design for my loading spinner made in CSS (free to use) from: https://loading.io/css/
