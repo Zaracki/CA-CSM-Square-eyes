@@ -2,24 +2,18 @@
 
 ![image](<images/Skjermbilde 2023-10-11 kl. 11.17.50.png>)
 
-A simple overview of the use/purpose of the project.
+A (fake) movie purchase website where you can buy and stream movies.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+Square Eyes is the first website I have created as part of a cross course project at Noroff as a Front-end Developer. I made a Wireframe and design in Figma, and built the site using HTML and CSS. Also used Javascript to fetch from the WooCommerce API to show the products/films and it´s content like descriptions and prices. The was made to be responsive and the user is able to go from picking a movie all the way to checkout.
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+HTML
+CSS
+Javascript
 
 ## Getting Started
 
@@ -41,8 +35,6 @@ npm install
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
 To run the app, run the following commands:
 
 ```bash
@@ -57,9 +49,7 @@ Here you can detail any information you want to provide regarding contributing t
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
+[My Portfolio](https://aweide.netlify.app)
 
 ## License
 
