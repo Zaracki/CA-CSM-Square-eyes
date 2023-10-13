@@ -1,4 +1,4 @@
-# Your project title
+# Square Eyes
 
 ![image](<images/Skjermbilde 2023-10-11 kl. 11.17.50.png>)
 
@@ -6,7 +6,7 @@ A (fake) movie purchase website where you can buy and stream movies.
 
 ## Description
 
-Square Eyes is the first website I have created as part of a cross course project at Noroff as a Front-end Developer. I made a Wireframe and design in Figma, and built the site using HTML and CSS. Also used Javascript to fetch from the WooCommerce API to show the products/films and it´s content like descriptions and prices. The was made to be responsive and the user is able to go from picking a movie all the way to checkout.
+Square Eyes is the first website I have created as part of a cross course project at Noroff as a Front-end Developer. I made a Wireframe, logo and design in Figma, and built the site using HTML and CSS. Also used Javascript to fetch from the WooCommerce API to show the products/films and it´s content like descriptions and prices. The was made to be responsive and the user is able to go from picking a movie all the way to checkout.
 
 
 ## Built With
@@ -18,8 +18,6 @@ Javascript
 ## Getting Started
 
 ### Installing
-
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
 1. Clone the repo:
 
@@ -47,13 +45,7 @@ Here you can detail any information you want to provide regarding contributing t
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
 [My Portfolio](https://aweide.netlify.app)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
 
 ## Acknowledgments
 
